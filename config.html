@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/config.css">
+    <title>Configuração</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <form  name="config" method="post" action="index.html">
+                <fieldset >
+                    <h2><ins>Configuração</ins></h2>
+                    <label class="semiPreto ">Comecei tomar dia <span>*</span></label>
+                    <input class="inputNumbers" type="number" name="nbrComecei" size="30" placeholder="Digite o dia que começou tomar" required><br>
+
+                    <label class="semiPreto">Comprimidos na cartela <span>*</span></label>
+                    <input class="inputNumbers"  type="number" name="nbrCartela" size="30" placeholder="Digite quantos comprimos ao total tem na cartela" required><br>
+
+                    <label class="semiPreto">Dias pausados <span>*</span></label>
+                    <input class="inputNumbers"  type="number" name="nbrPausados" size="30" placeholder="Digite quantos dias de pausa" required><br>
+                
+                    <h4>NOTIFICAÇÕES</h4>
+                    <div class="inputNotif" >
+                    <label class="semiPreto">Ativar Lembrete</label>
+                    <label class="switch ">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+
+                    <div class="inputNotif" >
+                        <label class="semiPreto">Horário do Lembrete</label>
+                        <input class="inputTime" type="time" name="nbrHorario" size="5" value="00:00">
+                    </div>
+
+                    <div class="inputNotif" >
+                    <label class="semiPreto">Intervalo do Lembrete</label>
+                    <input class="inputTime"type="time" name="nbrLembrete" size="10" value="05:00">
+                    </div>
+                    
+                    <input class="btn"type="submit" name="continuar" value="CONTINUAR">
+                </fieldset>
+                
+            </form>
+        </section>
+    </main>
+
+                    
+                    
+                    
+                
+</body>
+</html>
