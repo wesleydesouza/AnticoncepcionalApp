@@ -198,6 +198,7 @@ h4{
     .inputTime{
       font-size: 3.3vw;
       width: 26%;
+      padding-right: 1px;
     }
 
     .switch {
