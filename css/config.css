@@ -8,9 +8,9 @@
 }
 
 body{
-  height: 100%;
   background-image: linear-gradient(-130deg,#b84491, #b84491ec, rgba(224, 87, 178, 0.11));
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
  /*botao switch*/
@@ -80,8 +80,8 @@ fieldset{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px 80px 20px 80px;
-  margin: 19px 30% 7.4%;
+  padding: 10px 5% 20px ;
+  margin: 2% 30% ;
   background-color: rgba(245, 245, 245, 0.445);
   border-radius: 30px;
   border: solid 1px white;
@@ -97,8 +97,12 @@ span{
 h2{
  text-align: center;
 }
+h4{
+  margin-top: 2%;
+}
 
 .inputNumbers{
+  margin: 3%;
   height: 37px;
   border-radius: 10px;
   border: none;
@@ -155,4 +159,104 @@ h2{
         font-size: 1.2em;
       }
   
+  @media screen and (min-width: 769px) and (max-width: 1024px){
+    fieldset{
+      margin:2% 25%;
+      padding: 10px 30px 20px ;
+    }
+    .responsive_font{
+      font-size: 1.7vw;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px){
+    fieldset{
+      margin:2% 14%;
+    }
+    .responsive_font{
+      font-size: 3vw;
+    }
+    .responsive_font_input{
+      font-size: 2.5vw;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px){
+    fieldset{
+      margin:2% 5%;
+      padding: 10px 23px 20px ;
+    }
+    .responsive_font{
+      font-size: 4.3vw;
+    }
+    .responsive_font_input{
+      font-size: 3vw;
+    }
+    .inputNumbers{
+      height: 30px;
+  }
+    .inputTime{
+      font-size: 3.6vw;
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 20px;
+    }
+    
+    .switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 17px;
+      left: 4px;
+      bottom: 2px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color: #E057B2;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #E057B2;
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+      border-radius: 50%;
+    }
   
+}
