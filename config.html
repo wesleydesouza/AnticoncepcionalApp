@@ -14,13 +14,16 @@
                 <fieldset >
                     <h2><ins>Configuração</ins></h2>
                     <label class="semiPreto responsive_font">Comecei tomar dia <span>*</span></label>
-                    <input class="inputNumbers responsive_font_input" type="number" name="nbrComecei" size="30" placeholder="Digite o dia que começou tomar" required>
+                    
+                    <input class="inputNumbers responsive_font_input" type="number" name="nbrComecei" size="30" min="1" placeholder="Digite o dia que começou tomar" required>
 
                     <label class="semiPreto responsive_font">Comprimidos na cartela <span>*</span></label>
-                    <input class="inputNumbers responsive_font_input"  type="number" name="nbrCartela" size="30" placeholder="Digite quantos comprimidos ao total na cartela" required>
+                    
+                    <input class="inputNumbers responsive_font_input"  type="number" name="nbrCartela" size="30" min="1" placeholder="Digite quantos comprimidos ao total na cartela" required>
 
                     <label class="semiPreto responsive_font">Dias pausados <span>*</span></label>
-                    <input class="inputNumbers responsive_font_input"  type="number" name="nbrPausados" size="30" placeholder="Digite quantos dias de pausa" required>
+                    
+                    <input class="inputNumbers responsive_font_input"  type="number" name="nbrPausados" size="30" min="1" placeholder="Digite quantos dias de pausa" required>
                 
                     <h4>NOTIFICAÇÕES</h4>
                     <div class="inputNotif" >
@@ -40,17 +43,13 @@
                     <label class="semiPreto responsive_font">Intervalo do Lembrete</label>
                     <input class="inputTime"type="time" name="nbrLembrete" size="10" value="05:00">
                     </div>
-                    
-                    <input class="btn" type="submit" name="continuar" value="CONTINUAR">
+                    <p id="output" style="color: red;"></p>
+                    <input class="btn" type="submit" name="continuar" value="CONTINUAR" onClick="return validacao()">
                 </fieldset>
                 
             </form>
         </section>
-    </main>
-
-                    
-                    
-                    
-                
+    </main>     
+    <script type="text/javascript" src="js/validacaoConfig.js"></script>
 </body>
 </html>
