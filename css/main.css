@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Encode+Sans+SC&family=Merienda:wght@400;700&family=Montserrat+Alternates&family=Sriracha&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sriracha, arial;
+}
+body{
+    background-image: linear-gradient(-130deg,#b84491, #b84491ec, rgba(224, 87, 178, 0.11));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+/*titulo*/
+.titulo{
+    background-color: #E057B2;
+    color:#F1F1F1;
+    text-align: center;
+    font-size:1vw;
+}
+/*calendario mes e ano*/
+.mesAno{
+    background-color: rgba(255, 255, 255, 0.35);
+    display: flex;
+    justify-content: center;
+    font-size:1vw;
+    color:#4E4646;
+    padding: 20px 0px;
+    border-bottom: solid 1px #F1F1F1;
+}
+.space{
+    margin:0px 0.5%;
+}
+/*calendario*/
+.calendario{
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.calendario ul{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom:1px solid #4E4646;
+    color:rgb(78, 70, 70);
+    padding: 10px 0px;
+}
+    .calendario ul:first-child{
+        border-bottom: none;
+    }
+    .calendario ul:last-child{
+        border-bottom: none;
+    }
+.calendario ul li{
+    list-style-type: none;
+    font-size: 1.5vw;
+}
+/*input*/
+.containerInputs{
+    padding: 15px 10%;
+    background-color:#E5E5E5;
+    font-size: 1.5vw;
+}
+.input{
+    
+}
+
+/*button*/
+.buttons{
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    position: fixed;
+}
+
+.containerButton{
+    width:100%;
+    height: 80px;
+}
+.button{
+    color:#F1F1F1;
+    font-size: 1.2vw;
+    width:100%;
+    height: 100%;
+    background-color:#E057B2;
+    border:none;
+    border-right:1px solid white;
+}
+    .borderNone{
+        border-right: none
+    }
